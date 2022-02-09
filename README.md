@@ -13,7 +13,7 @@ description: 关于C++STL的总体介绍
 * 了解C++函数模版和类模版的特性用法
 
 {% hint style="danger" %}
-上述三条如果还无法达到的话，建议先寻找相关教程学习。本教程之后会默认各位读者已经具有了一定的C++基础，对于上述三点内容不再加以解释。
+上述三条如果还无法达到的话，建议先寻找相关教程学习。本教程之后会默认各位小可爱已经具有了一定的C++基础，对于上述三点内容不再加以解释。
 {% endhint %}
 
 ## 什么是STL？
@@ -71,17 +71,19 @@ int main()
     cout << "Max = " << *max_element(v.begin(),v.end()) << endl;
     //利用算法accumulate计算并输出容器v中所有元素的和
     cout << "Sum = " << accumulate(v.begin(),v.end(),0) << endl;
-	//利用算法sort对容器v中的元素进行排序
-	sort(v.begin(),v.end()); 
-	//利用算法for_each输出排序结果
-	cout << "Sorted result is:\n";
-	for_each(v.begin(),v.end(),display);
-	cout << '\n';
-	return 0;
+    //利用算法sort对容器v中的元素进行排序
+    sort(v.begin(),v.end()); 
+    //利用算法for_each输出排序结果
+    cout << "Sorted result is:\n";
+    for_each(v.begin(),v.end(),display);
+    cout << '\n';
+    return 0;
 }
-
-
 ```
 
+> 用STL来实现上述程序的功能不需要涉及一些低级的程序元素，如数组、链表、循环，使得程序设计变得更便捷。
 
+{% hint style="success" %}
+到此为止，小可爱们应当已经对C++STL有了一个概念上的大致印象。
+{% endhint %}
 
