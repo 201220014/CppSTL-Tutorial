@@ -28,6 +28,10 @@ STL中包含了很多种容器，虽然这些容器提供了一些相同的操�
 
 在头文件`list`中定义，用**双向链表**实现。&#x20;
 
+{% hint style="info" %}
+在C++11标准中增加了`forward_list`容器，本质上是一个**单向链表**，定义在头文件`forward_list`中。
+{% endhint %}
+
 ### deque<元素类型>
 
 用于主要在元素序列的两端增加/删除元素以及需要快速定位（访问）任意位置上的元素的场合。
@@ -80,26 +84,34 @@ STL中包含了很多种容器，虽然这些容器提供了一些相同的操�
 
 它们在头文件`map`中定义，常常用某种**二叉树**来实现。
 
+{% hint style="info" %}
+有时候我们不需要排序，所以在C++11标准中新增加了`unordered_map`
+
+和`unordered_multmap`容器。
+{% endhint %}
+
 ### set<元素类型> 和 multiset<元素类型>
 
 它们分别是`map`和`multimap`的特例，每个元素只有关键字而没有值，或者说，关键字与值合一了。
 
 在头文件`set`中定义。
 
+{% hint style="info" %}
+C++11标准中增加了`unordered_set`和`unordered_multiset`容器。
+{% endhint %}
+
 ### basic\_string<字符类型>
 
-与vector类似，不同之处在于其元素为字符类型，并提供了一系列与**字符串**相关的操作。&#x20;
+与`vector`类似，不同之处在于其元素为字符类型，并提供了一系列与**字符串**相关的操作。&#x20;
 
-string和wstring分别是它的两个实例：
+`string`和`wstring`分别是它的两个实例：
 
 * `basic_string<char>`
 * `basic_string<wchar_t>`
 
-在头文件string中定义。
+在头文件`string`中定义。
 
-{% hint style="info" %}
-在C++11标准中还引入了一些其他的无序容器，比如说：
-{% endhint %}
+
 
 
 

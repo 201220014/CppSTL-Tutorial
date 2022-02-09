@@ -1,8 +1,5 @@
 ---
 description: 关于C++STL的总体介绍
-cover: >-
-  https://images.unsplash.com/photo-1642543491722-f176053e2df7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDQ0MDI2MjE&ixlib=rb-1.2.1&q=85
-coverY: 208.46376811594203
 ---
 
 # 📗 概述
