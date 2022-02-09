@@ -132,6 +132,43 @@ C++11标准中增加了`unordered_set`和`unordered_multiset`容器。
   * 重载小于操作符（<） 对容器进行的一些操作中可能要进行元素比较运算。
 {% endhint %}
 
+## 举例：利用`map`实现一个简单的电话簿
+
+```cpp
+#include <iostream>
+#include <map>
+#include <string>
+using namespace std;
+int main()
+{
+    map<string,int> phone_book; // 创建一个map类容器，用于存储电话号码簿
+    
+    // 创建电话簿
+    phone_book["wang"] = 12345678; // 通过[]操作和关键字往容器中加入元素
+    phone_book["li"] = 87654321;
+    phone_book["zhang"] = 56781234;
+    // ......  还可以添加更多的信息
+    // 输出电话号码簿
+    cout << "电话号码簿的信息如下：\n";
+    for (pair<string, int> item: phone_book) 
+    // C++11中引入的enhanced-for loop
+        cout << item.first << ": " << item.second << endl; 
+    // 输出元素的姓名和电话号码
+
+    // 查找某个人的电话号码
+    string name;
+    cout << "请输入要查询号码的姓名：";
+    cin >> name;
+    map<string,int>::const_iterator it; // 创建一个不能修改所指向的元素的迭代器
+    it = phone_book.find(name); // 查找关键字为name的容器元素
+    if (it == phone_book.end()) // 判断是否找到
+        cout << name << ": not found\n"; // 未找到
+    else
+        cout << it->first << ": " << it->second << endl; // 找到
+    return 0;
+}
+```
+
 {% hint style="success" %}
 至此，读者应当对于STL中的容器有了一个整体上的把控，知晓各容器的基本特征。
 {% endhint %}
