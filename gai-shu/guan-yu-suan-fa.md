@@ -243,7 +243,7 @@ int main()
 }
 ```
 
-
-
-
+{% hint style="success" %}
+至此，读者应当已经明白了STL中的算法是怎样通过迭代器作用于容器的。
+{% endhint %}
 
