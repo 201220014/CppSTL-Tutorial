@@ -1,5 +1,8 @@
 ---
 description: 关于C++STL的总体介绍
+cover: >-
+  https://images.unsplash.com/photo-1642543491722-f176053e2df7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDQ0MDI2MjE&ixlib=rb-1.2.1&q=85
+coverY: 208.46376811594203
 ---
 
 # 📗 概述
@@ -15,6 +18,8 @@ description: 关于C++STL的总体介绍
 {% hint style="danger" %}
 上述三条如果还无法达到的话，建议先寻找相关教程学习。本教程之后会默认各位小可爱已经具有了一定的C++基础，对于上述三点内容不再加以解释。
 {% endhint %}
+
+> 本教程的部分内容基于南京大学2021春学期高级程序设计课程陈家骏老师课堂内容。
 
 ## 什么是STL？
 
