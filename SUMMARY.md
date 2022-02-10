@@ -11,3 +11,5 @@
   * [🚃 vector - 向量](rong-qi-container/vector-xiang-liang.md)
   * [➿ deque - 双向队列](rong-qi-container/deque-shuang-xiang-dui-lie.md)
   * [🍡 stack - 栈](rong-qi-container/stack-zhan.md)
+  * [🏁 queue - 队列](rong-qi-container/queue-dui-lie.md)
+  * [📜 list - 链表](rong-qi-container/list-lian-biao.md)

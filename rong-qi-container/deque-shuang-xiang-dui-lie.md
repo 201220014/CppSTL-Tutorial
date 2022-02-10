@@ -9,10 +9,9 @@ description: STL中deque类的详细介绍
 vector 容器是单向开口的连续内存空间，deque 则是一种双向开口的连续线性空间
 
 * 所谓的双向开口，意思是可以在头尾两端分别做元素的插入和删除操作
-
-![deque](../.gitbook/assets/IMG\_1587.jpeg)
-
 * vector 虽然也能在头尾插入元素，但是在头部插入元素的效率很低，需要大量进行移位操作
+
+![deque](../.gitbook/assets/IMG\_1583.jpeg)
 
 **deque 容器和 vector 最大的差异**
 
