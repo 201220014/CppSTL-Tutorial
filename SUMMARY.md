@@ -16,3 +16,5 @@
   * [🏵 set / multiset - 集合](rong-qi-container/set-multiset-ji-he.md)
   * [🗺 map / multimap - 映射](rong-qi-container/map-multimap-ying-she.md)
   * [🗒 容器简单小结](rong-qi-container/rong-qi-jian-dan-xiao-jie.md)
+* [🏭 仿函数(Functor)](fang-han-shu-functor.md)
+* [💻 算法(Algorithm)](suan-fa-algorithm.md)
