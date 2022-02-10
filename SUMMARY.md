@@ -10,4 +10,4 @@
   * [🎶 string - 字符串](rong-qi-container/string-zi-fu-chuan.md)
   * [🚃 vector - 向量](rong-qi-container/vector-xiang-liang.md)
   * [➿ deque - 双向队列](rong-qi-container/deque-shuang-xiang-dui-lie.md)
-  * [stack - 栈](rong-qi-container/stack-zhan.md)
+  * [🍡 stack - 栈](rong-qi-container/stack-zhan.md)
