@@ -240,19 +240,142 @@ string substr(int pos = 0, int n = npos) const;
 
 #### **`insert` 成员函数**
 
+```cpp
+string& insert(int pos, const char* s); // 在pos位置插入C风格字符数组
+string& insert(int pos, const string& str); // 在pos位置插入字符串str
+string& insert(int pos, int n, char c); // 在pos位置插入n个字符c
+```
 
+> 返回值是插入后的字符串结果，`erase`同理。其实就是指向自身的一个引用。
 
+#### **`erase` 成员函数**
 
+```cpp
+string& erase(int pos, int n = npos); // 删除从pos位置开始的n个字符
+```
 
+> 默认一直删除到末尾。
 
+### `string` 和 `C-Style` 字符串的转换
 
+#### **`string` 转 `const char*`**
 
+```cpp
+string str = "demo";
+const char* cstr = str.c_str();
+```
 
+#### **`const char*` 转 `string`**
 
+```cpp
+const char* cstr = "demo";
+string str(cstr); // 本质上其实是一个有参构造
+```
 
+{% hint style="info" %}
+在c++中存在一个从`const char*`到`string`类的隐式类型转换，但却不存在从一个`string`对象到`const char*`的自动类型转换。对于`string`类型的字符串，可以通过`c_str()`方法返回`string`对象对应的`const char*` 字符数组。
 
+比如说，当一个函数的参数是`string`时，我们可以传入`const char*`作为参数，编译器会自动将其转化为`string`，但这个过程不可逆。
 
+为了修改string字符串的内容，下标操作符`[]`和`at`都会返回字符串的引用，但当字符串的内存被重新分配之后，可能发生错误。（结合字符串的本质是动态字符数组的封装便不难理解了）
+{% endhint %}
 
+## 和 string 相关的全局函数
 
+> 注：有的可能需要C++11标准。
 
+### 大小写转换
 
+```cpp
+#include <cctype>
+// 在iostream中已经包含了这个头文件，如果没有包含iostream头文件，则需手动包含cctype
+
+int tolower(int c); // 如果字符c是大写字母，则返回其小写形式，否则返回本身
+int toupper(int c); // 如果字符c是小写字母，则返回其大写形式，否则返回本身
+
+/**
+  * C语言中字符就是整数，这两个函数是从C库沿袭过来的，保留了C的风格
+*/
+```
+
+如果想要对整个字符串进行大小写转化，则需要使用一个`for`循环，或者配合和`algorithm`库来实现。例如：
+
+```cpp
+#include <string>
+#include <cctype>
+#include <algorithm>
+
+string str = "Hello, World!";
+transform(str.begin(), str.end(), str.begin(), toupper); //字符串转大写
+transform(str.begin(), str.end(), str.begin(), tolower); //字符串转小写
+```
+
+### 字符串和数字的转换
+
+#### **`int`/`double` 转 `string`**
+
+> c++11标准新增了全局函数`std::to_string`，十分强大，可以将很多类型变成`string`类型。
+
+```cpp
+#include <string>
+using namespace std;
+
+/** 带符号整数转换成字符串 */
+string to_string(int val);
+string to_string(long val);
+string to_string(long long val);
+
+/** 无符号整数转换成字符串 */
+string to_string(unsigned val);
+string to_string(unsigned long val);
+string to_string(unsigned long long val);
+
+/** 实数转换成字符串 */
+string to_string(float val);
+string to_string(double val);
+string to_string(long double val);
+```
+
+#### **`string` 转 `double` / `int`**
+
+```cpp
+#include <cstdlib>
+#include <string>
+using namespace std;
+
+/** 字符串转带符号整数 */
+int stoi(const string& str, size_t* idx = 0, int base = 10);
+long stol(const string& str, size_t* idx = 0, int base = 10);
+long long stoll(const string& str, size_t* idx = 0, int base = 10);
+
+/**
+  * 1. idx返回字符串中第一个非数字的位置，即数值部分的结束位置
+  * 2. base为进制
+  * 3. 该组函数会自动保留负号和自动去掉前导0
+ */
+
+/** 字符串转无符号整数 */
+unsigned long stoul(const string& str, size_t* idx = 0, int base = 10);
+unsigned long long stoull(const string& str, size_t* idx = 0, int base = 10);
+
+/** 字符串转实数 */
+float stof(const string& str, size_t* idx = 0);
+double stod(const string& str, size_t* idx = 0);
+long double stold(const string& str, size_t* idx = 0);
+```
+
+与之类似的在同一个库里的还有一组基于字符数组的函数如下。
+
+```cpp
+// 'a' means array, since it is array-based. 
+
+int atoi(const char* str); // 'i' means  int
+long atol(const char* str); // 'l' means long
+long long atoll(const char* str); // 'll' means long long
+
+double atof(const char* str); // 'f' means double
+```
+
+{% hint style="success" %}
+至此，读者应当详细了解了C++STL中string容器的各种用法以及其他一些字符串处理的常用函数。可能量有些大，无法一下子记住，可以暂时留个印象，待到使用时多翻一翻，慢慢就记住了。
+{% endhint %}
