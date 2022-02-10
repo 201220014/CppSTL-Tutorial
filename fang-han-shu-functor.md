@@ -1,5 +1,8 @@
 ---
 description: 在详细讲常用的算法之前补充一下函数对象的相关内容，后面会用到。
+cover: >-
+  https://images.unsplash.com/photo-1611117775350-ac3950990985?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw0fHxtYWNoaW5lfGVufDB8fHx8MTY0NDUwODcxNA&ixlib=rb-1.2.1&q=85
+coverY: 0
 ---
 
 # 🏭 仿函数(Functor)

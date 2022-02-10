@@ -1,5 +1,8 @@
 ---
 description: 对于STL中各种类型的算法的详细介绍
+cover: >-
+  https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwyfHxhbGdvcml0aG18ZW58MHx8fHwxNjQ0NDk2MDc2&ixlib=rb-1.2.1&q=85
+coverY: -634.3047830923248
 ---
 
 # 💻 算法(Algorithm)
