@@ -14,13 +14,13 @@ description: STL中list类的详细介绍
   * 储存数据元素的数据域
   * 储存下一个结点地址的指针域
 
-相较于vector的连续线性空间，list就显得复杂许多
+相较于vector的连续线性空间，list就显得复杂许多。
 
 * 它的好处是每次插入或者删除一个元素，就是配置或者释放一个元素的空间
 * 因此，list对于空间的运用有绝对的精准，一点也不浪费
 * 而且，list对于任何位置插入或删除元素都是常数项时间
 
-list 容器是一个**双向链表**
+list 容器是一个**双向链表：**
 
 ![list](../.gitbook/assets/IMG\_1587.jpeg)
 
@@ -93,11 +93,51 @@ erase(pos); // 删除pos位置的数据，返回下一个数据的位置
 remove(elem); // 删除容器中所有与elem匹配的元素
 ```
 
+### list 大小操作
 
+```cpp
+int size(); // 返回容器中元素的个数
+bool empty(); // 判断容器是否为空
 
+void resize(int num);
+// 重新制定容器的长度为num，若容器变长，则以默认值填充新位置；
+// 若容器变短，则末尾超出容器长度的元素被删除
+void resize(int num, T elem);
+// 重新制定容器的长度为num，若容器变长，则以elem填充新位置；
+// 若容器变短，则末尾超出容器长度的元素被删除
+```
 
+### list 赋值操作
 
+```cpp
+assign(beg, end); // 将[beg, end)区间中的数据拷贝赋值给本身
+assign(n, elem); // 将n个elem拷贝赋值给本身
 
+list& operator=(const list& lst); // 重载等号操作符
 
+swap(lst); // 将lst与本身的元素互换
+```
 
+### list 数据的存取
 
+```cpp
+T& front(); // 返回第一个元素
+T& back(); // 返回最后一个元素
+```
+
+### list 反转排序
+
+```cpp
+void reverse(); // 反转链表
+
+void sort(); // 默认list排序，规则为从小到大
+void sort(bool (*cmp)(T item1, T item2)); // 指定排序规则的list排序
+
+// 不能用sort(lst.begin(), lst.end())
+// 因为所有系统提供的某些算法（比如排序），其迭代器必须支持随机访问
+// 不支持随机访问的迭代器的容器，容器本身会对应提供相应的算法的接口
+```
+
+{% hint style="success" %}
+至此，读者应当对list的特点及基本操作有了较为全面的认识，使用时API记不清可以回头多看。
+{% endhint %}
