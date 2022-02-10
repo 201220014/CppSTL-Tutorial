@@ -9,4 +9,5 @@
 * [🍜 容器(Container)](rong-qi-container/README.md)
   * [🎶 string - 字符串](rong-qi-container/string-zi-fu-chuan.md)
   * [🚃 vector - 向量](rong-qi-container/vector-xiang-liang.md)
-  * [Page 1](rong-qi-container/page-1.md)
+  * [➿ deque - 双向队列](rong-qi-container/deque-shuang-xiang-dui-lie.md)
+  * [stack - 栈](rong-qi-container/stack-zhan.md)
