@@ -150,13 +150,44 @@ count_if(students.begin(),students.end(), MatchMajorAndSex(COMPUTER,FEMALE));
 count_if(students.begin(),students.end(), MatchMajorAndSex(PHYSICS,MALE))；
 ```
 
-如果还有更多的
+如果还有更多的需求，再定义更多的函数或者函数对象对象会比较麻烦，我们可以采用$$\lambda$$**表达式**来解决。
 
+* 匿名函数
+* 编译器隐式地为之定义类（重载了函数调用操作符）和创建函数对象。
 
+{% hint style="warning" %}
+关于C++11中引入的匿名函数的用法，在这个教程里面不会详细解释，如果不清楚的同学可以寻找相关教程了解一下其语法和原理。
 
+参考教程：[https://www.runoob.com/cplusplus/cpp-functions.html](https://www.runoob.com/cplusplus/cpp-functions.html)
 
+后续教程将会默认读者知晓匿名函数的用法。
+{% endhint %}
 
+比如说：
 
+```cpp
+//统计“计算机专业女生”的人数	
+cout << "计算机专业女生的人数是：" 
+      << count_if(students.begin(),students.end(),
+        [](Student &st) { return (st.get_major() == COMPUTER)
+			     && (st.get_sex() == FEMALE); });
 
+//统计出生地为"南京籍计算机专业"的学生人数
+cout << "出生地为\"南京\"的学生人数是：" 
+      << count_if(students.begin(),students.end(),
+  [](Student &st) { return (st.get_major() == COMPUTER) 
+          && (st.get_birth_place().find("南京")!= string::npos);});
 
+//按“学号由小到大”对students的元素进行排序
+sort(students.begin(),students.end(),
+		[](Student &st1,Student &st2) {  
+                                 return  st1.get_no()<st2.get_no();});
+//按“姓名由小到大”对students的元素进行排序
+sort(students.begin(),students.end(),
+		[](Student &st1,Student &st2) {  
+                           return st1.get_name()<st2.get_name();});
+```
 
+{% hint style="success" %}
+至此，读者应当对于C++STL的整体用法有了基本的掌握。在告知接口或者API的情况下，应当能够正确得使用STL了。
+{% endhint %}
