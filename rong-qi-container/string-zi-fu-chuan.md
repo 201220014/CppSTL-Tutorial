@@ -6,7 +6,9 @@ description: STL中string类的详细介绍
 
 ## string 容器基本概念
 
-> C风格字符串（以`\0`结尾的字符数组）太过复杂，难于掌握，不太适合大程序的开发，所以C++STL中定义了一种string类，在头文件`<string>`中。
+C风格字符串（以`\0`结尾的字符数组）太过复杂，难于掌握，不太适合大程序的开发，所以C++STL中定义了一种string类，在头文件`<string>`中。
+
+![](https://images.unsplash.com/photo-1615230892109-ae38ab7e8a64?crop=entropy\&cs=srgb\&fm=jpg\&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw3fHxzdHJpbmd8ZW58MHx8fHwxNjQ0NDk2MzM4\&ixlib=rb-1.2.1\&q=85)
 
 ### string 和 C风格字符 串对比
 

@@ -16,6 +16,8 @@ coverY: -457.5845410628019
 * 数据结构
 * 常用API接口
 
+![](https://images.unsplash.com/photo-1520038410233-7141be7e6f97?crop=entropy\&cs=srgb\&fm=jpg\&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw2fHxib3h8ZW58MHx8fHwxNjQ0NDk2MzAw\&ixlib=rb-1.2.1\&q=85)
+
 ## 如何选取合适的容器
 
 根据前面的叙述，容器分为序列容器和容器适配器两种，其选择的主要流程如下：

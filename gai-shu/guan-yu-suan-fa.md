@@ -27,6 +27,8 @@ STL算法实现了**对序列元素的一些常规操作**，用函数模板实�
 * 使用者只需要提供：容器（迭代器）、操作条件以及可能的自定义操作。
 * 算法的**控制逻辑则由算法内部实现**，这体现了一种**抽象**的编程模式。
 
+![](https://images.unsplash.com/photo-1635335356074-5a9e45b47a14?crop=entropy\&cs=srgb\&fm=jpg\&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw5fHxhbGdvcml0aG18ZW58MHx8fHwxNjQ0NDk2MDc2\&ixlib=rb-1.2.1\&q=85)
+
 ## 算法与容器之间的关系
 
 在STL中，不是把容器传给算法，而是把容器的某些迭代器传给它们，在算法中通过迭代器来访问和遍历相应容器中的元素。

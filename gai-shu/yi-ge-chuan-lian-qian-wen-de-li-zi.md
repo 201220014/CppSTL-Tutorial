@@ -12,6 +12,8 @@ description: 通过一个例子，复习巩固已经学习的STL的用法
 下面这个例子能够完全看懂即可，如果想要上手写一遍，注意补全各种类型的定义。
 {% endhint %}
 
+![](https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy\&cs=srgb\&fm=jpg\&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5fGVufDB8fHx8MTY0NDQ5NjIxMw\&ixlib=rb-1.2.1\&q=85)
+
 ## 学生的类型
 
 一下是一个简单的学生类型，这将是我们要放在容器中的数据。下面的类的定义是不完备的，只列出了后续需要用到的部分，省略的部分可自行补充。

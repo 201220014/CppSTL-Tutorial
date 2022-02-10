@@ -8,6 +8,8 @@ description: STL中迭代器的概述
 
 迭代器实现了抽象的指针（智能指针）功能，它们用于指向容器中的元素，对容器中的元素进行访问和遍历。&#x20;
 
+![](https://images.unsplash.com/photo-1563906267088-b029e7101114?crop=entropy\&cs=srgb\&fm=jpg\&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw4fHxhcnJvd3xlbnwwfHx8fDE2NDQ0OTU4ODg\&ixlib=rb-1.2.1\&q=85)
+
 在STL中，迭代器是作为类模板来实现的（在头文件`iterator`中定义），它们可分为以下几种类型：&#x20;
 
 ### 根据访问修改权限分类

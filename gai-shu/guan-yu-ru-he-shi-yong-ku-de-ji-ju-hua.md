@@ -8,6 +8,8 @@ description: 如何看STL文档
 
 学习任何一门语言，使用前人已经写好的库是无法避免的一件事情，但是我们又没有足够多的精力去记住所有库的所有用法，通常的解决方案是什么呢？
 
+![library](https://images.unsplash.com/photo-1481627834876-b7833e8f5570?crop=entropy\&cs=srgb\&fm=jpg\&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwyfHxsaWJyYXJ5fGVufDB8fHx8MTY0NDQ5NjI2MQ\&ixlib=rb-1.2.1\&q=85)
+
 ## 解决方案
 
 一般我们需要了解这个语言常用的库是哪些，这些库的功能是什么，最终需要达到的效果是：给定一个需求，能够比较迅速的反应到这个需求大概在哪几个库里面有对应的用法即可。
