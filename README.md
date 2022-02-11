@@ -7,6 +7,10 @@ coverY: 208.46376811594203
 
 # 📗 概述
 
+**Author: CJC From NJU**
+
+**Email: 201220014@smail.nju.edu.cn**
+
 ## 前导知识
 
 在正式学习STL之前，各位读者需要有一定的C++基础，包括且不限于：

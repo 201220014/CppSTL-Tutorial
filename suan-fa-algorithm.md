@@ -17,6 +17,8 @@ coverY: -634.3047830923248
 
 自定义的类如果想要直接使用算法库，则需补全默认构造函数、拷贝构造函数、析构函数、赋值操作符、小于操作符、等于操作符。
 
+![](https://images.unsplash.com/photo-1635070041078-e363dbe005cb?crop=entropy\&cs=srgb\&fm=jpg\&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwyfHxtYXRofGVufDB8fHx8MTY0NDUzNzk0NQ\&ixlib=rb-1.2.1\&q=85)
+
 ## 常用遍历算法
 
 ### for\_each
@@ -336,9 +338,6 @@ set_union(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator d
 set_difference(iterator beg1, iterator end1, iterator beg2, iterator end2, iterator dest);
 ```
 
-
-
-
-
-
-
+{% hint style="success" %}
+结合概述一章中的关于算法，以及本章中对于各种具体算法接口的介绍，相信读者已经对C++STL中的算法有了十分清晰而又详尽的理解。恭喜，小可爱又变强了:smile:。
+{% endhint %}
