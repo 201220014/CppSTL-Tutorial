@@ -7,9 +7,9 @@ coverY: 208.46376811594203
 
 # 📗 概述
 
-**Author: CJC From NJU**
+**Author： CJC From NJU**
 
-**Email: 201220014@smail.nju.edu.cn**
+**Email： 201220014@smail.nju.edu.cn**
 
 ## 前导知识
 
