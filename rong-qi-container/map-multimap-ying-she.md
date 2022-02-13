@@ -98,5 +98,7 @@ pair<iterator, iterator> equal_range(T keyElem);
 // 返回容器中key与keyElem上相等的两个上下限迭代器
 ```
 
-
+{% hint style="success" %}
+至此，读者应当对map/multimap的特点及基本操作有了较为全面的认识，使用时API记不清可以回头多看。
+{% endhint %}
 
