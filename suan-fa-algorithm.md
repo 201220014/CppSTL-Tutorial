@@ -63,7 +63,7 @@ iterator transform(iterator beg1, iterator end1, iterator beg2, _callback);
   * @param value 查找的元素
   * @return 返回查找元素的位置
 */
-iterator find(iterator beg, iterator end, _callback);
+iterator find(iterator beg, iterator end, value);
 ```
 
 ### find\_if
